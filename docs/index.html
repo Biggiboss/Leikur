@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  
+  color: rgb(0, 0, 0); /* white text color */
+
+  background: url(myndheader.jpg) no-repeat center fixed;
+
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: rgb(12, 175, 204); /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: rgb(0, 0, 0); /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: rgb(12, 175, 204); /* Black text color */
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 50%; /* Set the width of the sidebar */
+  background-color: #3abc1a; /* Grey background color */
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* Main column */
+.main {
+  flex: 50%; /* Set the width of the main content */
+  background-color: rgb(204, 12, 22); /* White background color */
+  padding: 20px; /* Some padding */
+  box-sizing: border-box;
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: rgb(100, 224, 121); /* Grey background */
+  box-sizing: border-box;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>A website created by me.</p>
+      </div>
+
+      <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" class="right">Link</a>
+      </div>
+
+      <div class="row">
+        <div class="side">4</div>
+        <div class="main">5</div>
+    </div>  
+
+    <div class="footer">
+        <h2>Footer</h2>
+      </div> 
+
+</body>
+</html>
